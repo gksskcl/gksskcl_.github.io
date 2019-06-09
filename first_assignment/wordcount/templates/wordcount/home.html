@@ -1,0 +1,18 @@
+
+<main role="main">
+                  
+        <section class="jumbotron text-center">
+          <div class="container">
+            <h1 class="jumbotron-heading">"WORD COUNT"</h1>
+            <p style="color:red !important" class="lead text-muted">문자열을 입력하세요!</p>
+            
+
+          </div>
+        </section>
+<a href="{% url 'about' %}">ABOUT</a>
+<a href="{% url 'login' %}">LOGIN</a>
+<form action="{% url 'count' %}">
+    <textarea cols="40" rows="10" name="fulltext"></textarea>
+    <br>
+    <input type="submit" value="Count!"/>
+</form>
